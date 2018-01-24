@@ -1,0 +1,56 @@
+/**
+ * Responsive mobile CSS:
+ *
+ * TEST
+ * test.
+ */
+
+ /*@media screen and (min-width: 40em) and (max-width: 63.9375em) {*/
+ @media screen and (max-width: 40em) {
+
+  body {
+    background-size: cover;
+  }
+
+  header .phone {
+    padding-top: 0;
+  }
+
+ }
+
+ @media screen and (max-width: 63.9375em) {
+  .header__contacts {
+    margin: 0;
+    padding-top: 0;
+  }
+
+  header .phone > div {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+    
+
+ }
+
+
+ @media screen and (min-width: 63.9375em) {
+  
+  .header__contacts .button {
+    width: 300px;
+  }
+    
+
+ }
+
+
+
+
+/*------------------------------------*\
+  #Wordpress
+\*------------------------------------*/
+
+@media screen and (max-width: 600px) {
+  #wpadminbar {
+      position: fixed;
+  }
+}

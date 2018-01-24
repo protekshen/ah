@@ -1,0 +1,456 @@
+/**
+ * CONTENTS
+ *
+ * BASE STYLES
+ * html, body, h1,h2,h3 and other.
+ *
+ *
+ *
+ */
+
+
+/*------------------------------------*\
+  #Base
+\*------------------------------------*/
+
+
+
+
+
+html {
+  color: #191212;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background: url(../images/bg.jpg)  no-repeat  center  top;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.off-canvas {
+  z-index: 2;
+}
+
+.button {
+  border: 1px solid #fd0820;
+  background: transparent;
+  color: #fd0820;
+}
+
+.button-accent {
+  color: #105d42;
+  border: 1px solid #105d42;
+}
+
+  .button-accent:hover, .button-accent:focus {
+      background-color: #105d42;
+      color: #fefefe;
+  }
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: #033b4a;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 2.25rem; /*36*/
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.75rem; /*28*/
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.5rem; /*24*/
+  font-weight: 400;
+}
+
+button:active,
+button:focus,
+.button:active,
+.button:focus { 
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+
+
+/*------------------------------------*\
+  #Header
+\*------------------------------------*/
+
+.fixed-header {
+  /* transition: 0.25s ease-out; */
+  background: white;
+  border-top: 2px solid #fd0820;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  -webkit-box-shadow: 0px 6px 7px -3px rgba(0,0,0,0.26);
+     -moz-box-shadow: 0px 6px 7px -3px rgba(0,0,0,0.26);
+          box-shadow: 0px 6px 7px -3px rgba(0,0,0,0.26);
+}
+
+header.header {
+  border-top: 0.625rem solid #fd0820;
+}
+
+.header > .header-content {
+  padding: 1rem 0; /*16 0*/
+}
+
+  .header__logo {
+    position: relative;
+  }
+
+    .header__logo img {
+      margin-right: 0.375rem;
+    }
+
+  .header-logo-small {
+    width: 50px;
+    position: relative;
+    top: 10px;
+  }
+
+header .phone {
+  padding-top: 1rem;
+}
+
+  header .phone > div {
+    display: inline-block;
+    padding: 0;
+    font-size: 2rem; 
+  }
+
+  header .phone a {
+    color: #191212;
+  }
+  
+header .phone .fa-phone {
+  color: #fd0820;
+}
+
+.header__contacts {
+  font-size: 18px;
+  padding-top: 1rem;
+}
+
+.header__contacts .button {
+  display: inline-block;
+  margin-top: 0.3125rem; /*5*/
+}
+
+
+.menu-icon {
+  margin: 0 1rem;
+  width: 30px;
+}
+
+  .menu-icon::after {
+    background: #fd0820;
+    box-shadow: 0 7px 0 #fd0820, 0 14px 0 #fd0820;
+  }
+
+    .menu-icon:hover::after {
+        background: #1daa78;
+        box-shadow: 0 7px 0 #1daa78, 0 14px 0 #1daa78;
+    }
+
+
+/*------------------------------------*\
+  #Layout
+\*------------------------------------*/
+
+.breadcrumb {
+    list-style: none;
+    border-radius: 4px;
+}
+.breadcrumb a {
+    color: #428bca;
+    text-decoration: none;
+}
+
+.main-navigation {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.main-navigation a.button {
+  border-radius: 25px;
+  border-color: #cdcdcd;
+}
+
+  .main-navigation a.button:hover, 
+  .main-navigation a.button:focus {
+    background-color: transparent;
+    border-color: #fd0820;
+    box-shadow: 1px solid #fd0820;
+    -webkit-box-shadow: 0px 3px 20px -3px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 3px 20px -3px rgba(0,0,0,0.26);
+    box-shadow: 0px 3px 20px -3px rgba(0,0,0,0.26);
+  }
+
+
+
+
+
+
+
+
+
+.line-separator {
+  border-bottom: 1px solid #cccccc;
+  margin: 1rem 0;
+}
+  
+.backcall-block {
+  background: #191212;
+  color: white;
+  width: 100%;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+  .backcall-content__title {
+    font-size: 2rem;
+  }
+
+  .backcall-block .fa-long-arrow-down {
+    font-size: 2.25rem;
+    padding: 1rem;
+  }
+
+
+.other-page article {
+  margin: 1.5rem 0;
+}
+
+/*------------------------------------*\
+  #Menu
+\*------------------------------------*/
+
+.top-menu .menu a {
+  color: #191212;
+  border: 1px solid rgba(237, 237, 237, 0);
+}
+
+  .top-menu .menu a:hover,
+  .top-menu .menu a:focus {
+    color: #fd0820;
+    box-shadow: 1px solid #fd0820;
+    -webkit-box-shadow: 0px 3px 20px -3px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 3px 20px -3px rgba(0,0,0,0.26);
+    box-shadow: 0px 3px 20px -3px rgba(0,0,0,0.26);
+    border: 1px solid #ededed;
+  }
+
+  .top-menu .menu a:active {
+    border: 1px solid #dc0217;
+    box-shadow: none;
+  }
+      
+
+.bot-menu .menu a {
+  color: #191212;
+}
+
+  .bot-menu .menu a:hover,
+  .bot-menu .menu a:focus {
+    color: #fff;
+  }
+
+
+/*------------------------------------*\
+  #off-canvas
+\*------------------------------------*/
+
+.off-canvas {
+  background: white;
+}
+    
+.off-canvas a {
+  color: #191212;
+  border: 1px solid rgba(237, 237, 237, 0);
+}
+
+  .off-canvas .header-navigation li a:hover,
+  .off-canvas .header-navigation li a:focus {
+    color: #fd0820;
+    box-shadow: 1px solid #fd0820;
+    -webkit-box-shadow: 0px 3px 20px -3px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 3px 20px -3px rgba(0,0,0,0.26);
+    box-shadow: 0px 3px 20px -3px rgba(0,0,0,0.26);
+    border: 1px solid #ededed;
+  }
+
+  .off-canvas a:active {
+    border: 1px solid #dc0217;
+    box-shadow: none;
+  }
+
+
+/*------------------------------------*\
+  #Forms
+\*------------------------------------*/
+
+.washing-form {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1.25rem; /*20*/
+  background: #fd0820;
+  color: #105d42;
+  border-radius: 10px;
+  border: 2px solid rgba(16, 93, 66, 0.8);
+  transition: opacity 0.25s ease-out, border 0.25s ease-out;
+}
+
+.washing-form:hover,
+.washing-form:focus,
+.washing-form:active {
+   border: 2px solid rgba(16, 93, 66, 1);
+}
+
+.washing-form form {
+  margin: 1rem 0; /*16*/
+}
+
+.washing-form__title {
+  font-size: 1.125rem; /*18*/
+}
+
+.washing-form .button {
+  width: 100%;
+  margin: 0;
+  border: 1px solid #fd0820;
+  color: #fd0820;
+}
+
+  .washing-form .button:hover,
+  .washing-form .button:focus {
+    background-color: #fd0820;
+    color: #fefefe;
+  }
+
+.washing-form hr {
+  border-bottom: 1px solid rgba(12, 76, 56, 0.22);
+  margin: 0.5rem 0;
+}
+    
+
+
+
+
+/*------------------------------------*\
+  #Call Back Form
+\*------------------------------------*/
+
+.callback-form {
+  position: relative;
+  max-width: 400px;
+  padding: 4rem;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+  .callback-form .button {
+    width: 100%;
+  }
+
+
+/*------------------------------------*\
+  #Other Pages
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #Google Map
+\*------------------------------------*/
+
+.google-map {
+  position: relative;
+  top: 46px;
+  height: 400px;
+  overflow: hidden;
+}
+  
+  .google-map iframe {
+    position:relative;
+    top:-46px;
+    border:none;
+  }
+
+
+
+
+
+
+/*------------------------------------*\
+  #Footer
+\*------------------------------------*/
+
+footer {
+  color: white;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fd0820+0,f9f9f9+0,fd0820+0,c10214+49,87020e+100 */
+  background: #fd0820; /* Old browsers */
+  background: -moz-linear-gradient(top, #fd0820 0%, #f9f9f9 0%, #fd0820 0%, #c10214 49%, #87020e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fd0820 0%,#f9f9f9 0%,#fd0820 0%,#c10214 49%,#87020e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fd0820 0%,#f9f9f9 0%,#fd0820 0%,#c10214 49%,#87020e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd0820', endColorstr='#87020e',GradientType=0 ); /* IE6-9 */
+}
+
+  footer .adress {
+    display: inline-block;
+  }
+
+  footer .phone a {
+    color: #fff;
+  }
+    
+  footer .phone .fa-phone {
+    color: #fff;
+  }
+
+.social-links {
+  margin: 1rem 0; /*16*/
+}
+  .social-links a {
+    color: #ffffff;
+    margin: 0 0.5rem;
+    font-size: 2rem; /*32*/
+  }
+
+  .social-links a:hover,
+  .social-links a:focus,
+  .social-links a:active {
+    color: #191212;
+    position: relative;
+    bottom: 1px;
+    transition: 0.25s ease-out;
+  }
+
+.footer-conacts {
+  margin-top: 1rem; /*16*/
+  margin-bottom: 1rem;
+}
+
+.footer-conacts .logo {
+  float: left;
+  margin-right: 16px;
+}
+
+
+
+
